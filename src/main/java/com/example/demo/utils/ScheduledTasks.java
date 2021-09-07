@@ -138,7 +138,7 @@ public class ScheduledTasks {
                 "\n" +
                 "</html>";
         helper.setText(html, true);
-        String[]  to =  {"marbyptt@gmail.com", "cristianarangodaza@gmail.com"};
+        String[]  to =  {"marbyptt@gmail.com", "cristianarangodaza@gmail.com", "wilson.gb3@gmail.com"};
         helper.setTo(to);
         javaMailSender.send(mimeMessage);
     }
