@@ -38,9 +38,9 @@ public class ScheduledTasks {
                     "}", headers);
             ResponseEntity<String> response = restTemplate.exchange("https://arquitectura-16-miso.herokuapp.com/report", HttpMethod.POST, entity, String.class);
              if(response.getStatusCodeValue() == 200) {
-                 this.sendEmail();
                  logger.info("Se llamo exitosamente el servicio");
              }else  {
+                 this.sendEmail();
                  logger.error("Se fallo el servicio");
              }
         } catch (Exception e) {
