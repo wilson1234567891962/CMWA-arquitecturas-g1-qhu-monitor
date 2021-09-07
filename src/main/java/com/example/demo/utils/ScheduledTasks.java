@@ -140,5 +140,6 @@ public class ScheduledTasks {
         String[]  to =  {"marbyptt@gmail.com", "cristianarangodaza@gmail.com", "wilson.gb3@gmail.com"};
         helper.setTo(to);
         javaMailSender.send(mimeMessage);
+        logger.warn("Se envio un correo electronico  donde fallo el servicio");
     }
 }
