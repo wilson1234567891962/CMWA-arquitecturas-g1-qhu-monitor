@@ -1,6 +1,5 @@
 package com.example.demo.utils;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -49,7 +48,7 @@ public class ScheduledTasks {
         }
     }
 
-    public void sendEmail() throws MessagingException, javax.mail.MessagingException {
+    public void sendEmail() throws javax.mail.MessagingException {
         javax.mail.internet.MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage);
         helper.setSubject("");
