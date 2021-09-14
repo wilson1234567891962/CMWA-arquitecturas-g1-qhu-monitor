@@ -44,6 +44,11 @@ public class ScheduledTasks {
                  logger.error("Se fallo el servicio");
              }
         } catch (Exception e) {
+            try{
+                this.sendEmail();
+             } catch (Exception e) {
+                         logger.error("Se fallo el servicio");
+            }
             logger.error(e);
         }
     }
